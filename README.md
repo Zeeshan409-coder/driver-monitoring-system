@@ -6,6 +6,8 @@ Fleet operators (trucking, delivery, taxi, bus) put a camera on the dashboard fa
 
 ![demo](docs/demo.gif)
 
+https://github.com/user-attachments/assets/f1fd6ec2-9292-429c-8e35-7b062594ca9f
+
 It runs on a laptop CPU, no GPU needed, and comes with a small web dashboard.
 
 ![dashboard](docs/dashboard.jpg)
