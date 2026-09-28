@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driver Monitoring</title>
+  <link rel="icon" href="/static/favicon.svg">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><img src="/static/favicon.svg" alt="" width="22" height="22"> Driver Monitoring</a>
+    <nav><a href="#/" data-nav="home">Trips</a></nav>
+  </header>
+
+  <main id="view-home" class="view">
+    <section>
+      <div class="section-head">
+        <h1>Trips</h1>
+        <label class="btn">Upload video<input type="file" id="upload" accept="video/*" hidden></label>
+      </div>
+      <p class="muted">Cabin camera recordings. Pick one to analyse: the system finds the driver, detects distractions and scores each driver.</p>
+      <div id="upload-status" class="muted small"></div>
+      <div id="video-grid" class="grid"></div>
+    </section>
+    <section>
+      <h2>Reports</h2>
+      <table class="table" id="run-table"></table>
+      <p id="no-runs" class="muted small" hidden>No reports yet.</p>
+    </section>
+  </main>
+
+  <main id="view-run" class="view" hidden>
+    <div class="run-head">
+      <div>
+        <h1 id="run-title">Trip</h1>
+        <div id="run-sub" class="muted"></div>
+      </div>
+      <div id="run-actions"></div>
+    </div>
+
+    <section id="run-progress" hidden>
+      <div class="progress"><div id="progress-bar"></div></div>
+      <div id="progress-info" class="muted small"></div>
+    </section>
+    <section id="run-failed" class="error" hidden></section>
+
+    <section id="run-results" hidden>
+      <div id="cards" class="cards"></div>
+      <div class="player-wrap"><video id="player" controls playsinline></video></div>
+      <div class="timeline-head">
+        <h3>Trip timeline</h3>
+        <div id="legend" class="legend"></div>
+      </div>
+      <div id="timeline" class="timeline"></div>
+      <div class="events-head">
+        <h3>Incidents <span id="event-count" class="count"></span></h3>
+        <div class="filters">
+          <select id="filter-driver"><option value="">All drivers</option></select>
+          <select id="filter-behaviour"><option value="">All behaviours</option></select>
+        </div>
+      </div>
+      <table class="table events" id="events"></table>
+      <h3>Downloads</h3>
+      <ul id="downloads" class="downloads"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

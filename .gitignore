@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# model weights are downloaded automatically
+*.pt
+*.onnx
+
+# local data
+data/
+runs/
+samples/*.mp4
+annotated_raw.mp4

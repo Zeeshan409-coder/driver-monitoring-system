@@ -1,0 +1,40 @@
+{
+  "video": "driver-action-recognition.mp4",
+  "note": "Hand-labelled second by second from the full video. Boundaries are accurate to about +-0.5 s. Head turns of about 1 s or more are labelled as looking_away.",
+  "drivers": [
+    {"driver": 1, "start": 0.0, "end": 141.5},
+    {"driver": 2, "start": 141.5, "end": 277.2},
+    {"driver": 3, "start": 277.2, "end": 418.4}
+  ],
+  "events": [
+    {"behaviour": "texting",      "start": 12,  "end": 30,  "driver": 1},
+    {"behaviour": "phone_call",   "start": 30.5, "end": 42.2, "driver": 1},
+    {"behaviour": "drinking",     "start": 60,  "end": 75,  "driver": 1},
+    {"behaviour": "looking_away", "start": 87.5, "end": 88.8, "driver": 1},
+    {"behaviour": "looking_away", "start": 94.5, "end": 96.2, "driver": 1},
+    {"behaviour": "looking_away", "start": 98.5, "end": 100.2, "driver": 1},
+    {"behaviour": "looking_away", "start": 103, "end": 104.6, "driver": 1},
+    {"behaviour": "looking_away", "start": 105.6, "end": 108.6, "driver": 1},
+    {"behaviour": "hand_to_face", "start": 110, "end": 123, "driver": 1},
+    {"behaviour": "hand_to_face", "start": 127, "end": 141.5, "driver": 1},
+
+    {"behaviour": "texting",      "start": 151, "end": 164, "driver": 2},
+    {"behaviour": "phone_call",   "start": 165.5, "end": 181.5, "driver": 2},
+    {"behaviour": "texting",      "start": 182, "end": 204, "driver": 2},
+    {"behaviour": "phone_call",   "start": 204, "end": 220, "driver": 2},
+    {"behaviour": "reaching",     "start": 221, "end": 224, "driver": 2},
+    {"behaviour": "drinking",     "start": 224, "end": 245, "driver": 2},
+    {"behaviour": "reaching",     "start": 251, "end": 257, "driver": 2},
+    {"behaviour": "reaching",     "start": 268, "end": 277.2, "driver": 2},
+
+    {"behaviour": "looking_away", "start": 278, "end": 281, "driver": 3},
+    {"behaviour": "texting",      "start": 285, "end": 303, "driver": 3},
+    {"behaviour": "phone_call",   "start": 303, "end": 319, "driver": 3},
+    {"behaviour": "texting",      "start": 319, "end": 332.5, "driver": 3},
+    {"behaviour": "phone_call",   "start": 333, "end": 346, "driver": 3},
+    {"behaviour": "controls",     "start": 348, "end": 365, "driver": 3},
+    {"behaviour": "drinking",     "start": 367, "end": 386, "driver": 3},
+    {"behaviour": "reaching",     "start": 388, "end": 406, "driver": 3},
+    {"behaviour": "hand_to_face", "start": 410.5, "end": 417, "driver": 3}
+  ]
+}
