@@ -4,7 +4,6 @@ Cabin camera footage in, driver safety report out.
 
 Fleet operators (trucking, delivery, taxi, bus) put a camera on the dashboard facing the driver. Nobody has time to watch hours of that footage. This tool watches it for them: it finds the driver, ignores the passenger, detects phone use, calls, drinking, looking away, reaching into the back seat and hands on the face, works out when a different person takes the wheel, and gives each driver a safety score with a clip of every incident.
 
-![demo](docs/demo.gif)
 
 https://github.com/user-attachments/assets/f1fd6ec2-9292-429c-8e35-7b062594ca9f
 
